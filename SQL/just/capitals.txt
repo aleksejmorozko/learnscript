@@ -1,0 +1,3 @@
+Washington	1e+07	5000	\N
+Oslo	2e+06	500	\N
+Moskov	1e+07	7500	\N

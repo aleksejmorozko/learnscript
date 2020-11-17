@@ -1,0 +1,4 @@
+San Francisco	(-194,53)
+Gomel	(23,-35)
+Berkley	(52,98)
+Hayward	(45,-25)
