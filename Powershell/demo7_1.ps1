@@ -7,5 +7,5 @@ param ($s)
 #    }
 #}
 #второй вариант только череза регулярное выражение
-$str = Select-String '([a-z]+(-|_)[a-z]+)' -InputObject $s -AllMatches | foreach {$_.matches}
+$str = Select-String '([a-z]+(-|_)[a-z]+)' -InputObject $s -AllMatches | foreach-object {$_.matches}
 $str.value

@@ -1,2 +1,2 @@
 param($s)
-echo ( $s -replace "\s+", " " )
+write-output ( $s -replace "\s+", " " )
