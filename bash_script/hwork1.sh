@@ -1,3 +1,4 @@
+#!/bin/bash
 echo '----------------------------exercise 1-------------------------------'
 date_now=$(date)
 echo [$date_now] "Hello, Task2!"

@@ -1,0 +1,1 @@
+Write a script to create hash-tables based on data that stored in files from task 1.
