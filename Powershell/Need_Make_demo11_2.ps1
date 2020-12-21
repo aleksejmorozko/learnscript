@@ -1,0 +1,1 @@
+Write a script to sort words in alphabet order from specific file and put them into 26 text files named A.txt, B.txt, and so on up to Z.txt.

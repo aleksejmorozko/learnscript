@@ -1,6 +1,6 @@
 class CustomObj{
-    [int]$x
-    [int]$y
+    [int]$x=5
+    [int]$y=10
     
     CustomObj() {
     }
