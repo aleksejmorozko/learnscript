@@ -1,7 +1,7 @@
 #!/bin/bash
 #Для работы с csv файлами установим утилиту cdvtool. При помощи даннй утилиты очень удобно раскодировать (распарсить) csv файлы.
 #создаем шаблон для будущего файла.
-echo "id,location_id,organization_id,service_id,name,userid,title,email,department" > new_accounts.csv
+echo "id,location_id,organization_id,service_id,name,userid,title,email,department" > accounts_new_uname.csv
 
 #создаем шаблон без заголовка. С таким файлом проще работать.
 cat accounts.csv | awk 'NR>1 {print $0}' > accounts_1.csv
@@ -60,5 +60,5 @@ echo ${a2[$i]}"," >>new_csv3
 done
 #формируем результирубющий файл и удаляем временные файлы
 paste new_csv1 new_csv2 new_csv3 new_csv4 > ./new_csv 
-tr -d "\t" < ./new_csv >> ./new_accounts.csv
-rm new_csv new_csv1 new_csv2 new_csv3 new_csv4
+tr -d "\t" < ./new_csv >> ./accounts_new_uname.csv
+rm new_csv new_csv1 new_csv2 new_csv3 new_csv4 accounts_1.csv
