@@ -2,9 +2,9 @@
 
 cat ./accounts.csv | awk 'NR < 2' > accounts_new.csv
 
-cat accounts.csv | awk -F"[,]" 'NR>1 { print $1 "," $2 "," $3 "," $4 "," }'> ./new_csv1
-cat accounts.csv | awk -F"[,]" 'NR>1 { print $5 }' | awk -F"[ ]" '{print toupper(substr($1,1,1)) substr($1,2)" "(toupper(substr($2,1,1)) substr($2,2))}'> ./new_csv2
-cat accounts.csv | awk -F"[,]" 'NR>1 { print "," $6 "," }'> ./new_csv3
+cat accounts.csv | awk -F"," 'NR>1 { print $1 "," $2 "," $3 "," $4 "," }'> ./new_csv1
+cat accounts.csv | awk -F"," 'NR>1 { print $5 }' | awk -F"[ ]" '{print toupper(substr($1,1,1)) substr($1,2)" "(toupper(substr($2,1,1)) substr($2,2))}'> ./new_csv2
+cat accounts.csv | awk -F"," 'NR>1 { print "," $6 "," }'> ./new_csv3
 
 i=0
 for name in $(cat accounts.csv | awk -F"[,]" 'NR>1 { print $5 }' | awk -F"[ ]" '{print tolower(substr($1,1,1)) tolower(substr($2,1))}'); do
