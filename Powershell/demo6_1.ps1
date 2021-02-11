@@ -1,7 +1,7 @@
+#Create a new sorted string using two strings with random characters in them. Strings contains only letters from a to z.
 class NewString{
     NewString(){
     }
-
     [string]MakeString([string]$s1, [string]$s2){
         [string]$st1 = $this.MakeOne($s1, $s2)
         [string]$st2 = ""

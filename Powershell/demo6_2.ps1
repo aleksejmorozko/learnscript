@@ -1,7 +1,7 @@
+# Write a script that it converts dash/underscore delimited words into camel and pascal casing.
 class Converse{
     Converse(){
     }
-
     [string]MakeString([string]$str){
         [array]$s=$str.ToCharArray()
         [string]$ns=""

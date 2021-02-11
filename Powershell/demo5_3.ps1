@@ -1,7 +1,6 @@
-class CustomObj {
-    
+# Write a PowerShell class to reverse a string word by word.
+class CustomObj {  
     CustomObj(){
-
     }
     [string]Reverse( [string]$str ){
         [int]$t = $str.length
@@ -11,5 +10,4 @@ class CustomObj {
         }
         return $str1
     }
-
 }

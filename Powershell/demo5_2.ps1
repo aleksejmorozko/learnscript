@@ -3,10 +3,8 @@
 # user and PrintString() print the string in upper case.
 class CustomObj {
     [string]$str
-
     CustomObj(){
     }
-
     SetString( [string]$str ){
         $this.str = $str
     }
