@@ -1,3 +1,5 @@
+#  Write a PowerShell class to implement pow(x, n) that
+# is returns the base to the exponent power (baseexponent).
 class CustomObj{
     [int]$x=5
     [int]$y=10
