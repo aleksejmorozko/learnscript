@@ -1,0 +1,17 @@
+sudo apt update
+sudo apt upgrade
+sudo apt install ansible
+sudo apt install openssh-client             --if need       
+openssh-keygen                              --generate key for connect
+--(server)
+
+ssh-copy-id -i ~/.ssh/mykey user@host       ----copy to server ssh-key-pub---
+ssh-copy-id -i ~/.ssh/id_rsa.pub lex@192.168.100.91
+
+sudo apt install sshpass                    -----for connect by pass-----
+
+ansible all -i hosts -m ping
+ansible group2 -i hosts -m ping
+ansible all -i hosts -m file -a "path=./ansible-file.txt"
+ansible all -i hosts -m file -a "path=/root/ansible-file.tet"           # -b  (при ключе -b необходимо указывать пользователя в админы)
+ansible test -i hosts -m copy -a "src=./copyfile.txt dest=./ mode=777"  # -b
