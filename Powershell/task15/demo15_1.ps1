@@ -11,14 +11,24 @@
 # Returns
 # --Hello there!
 
-function Write-ColorMessage {
+function Write-ColoredMessage {
     [CmdletBinding()]
     param (
         [string[]]$Text,
-        [string]$Blue='Blue'
+        [switch]$Blue,
+        [switch]$Red,
+        [switch]$Green,
+        [switch]$Yellow
     )
-    #$Text
-    #$col=($col -replace "-",'')
-    return(Write-Host $Text -ForegroundColor )
+    if($Blue -eq $true){
+        $color = 'Blue'
+    }elseif ($Red -eq $true) {
+        $color = 'Red'
+    }elseif ($Green) {
+        $color='Green'
+    }elseif ($Yellow) {
+        $color='Yellow'
+    }
+    return(Write-Host $Text -ForegroundColor $color)
 }
-Write-ColorMessage -Text "Hi" -Blue
+Write-ColoredMessage -Text "Hi" -Red

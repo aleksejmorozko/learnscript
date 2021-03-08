@@ -12,3 +12,13 @@
 # Returns
 # --Value from pipe: First
 # --Value from pipe: Second
+
+function Get-ValueFromPipe{
+    param(
+        [Parameter(ValueFromPipeline=$true)]
+        $Text
+    )   
+    Process{
+        Write-Host "Value from pipe: $Text" 
+    }
+}
