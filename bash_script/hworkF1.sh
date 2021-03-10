@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Для работы с csv файлами установим утилиту cdvtool. При помощи даннй утилиты очень удобно раскодировать (распарсить) csv файлы.
+#Для работы с csv файлами установим утилиту csvtool. При помощи даннй утилиты очень удобно раскодировать (распарсить) csv файлы.
 #создаем шаблон для будущего файла.
 echo "id,location_id,organization_id,service_id,name,title,email,department" > accounts_new_mail.csv
 
