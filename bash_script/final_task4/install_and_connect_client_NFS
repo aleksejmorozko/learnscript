@@ -1,0 +1,5 @@
+#!/bin/bash
+
+apt install nfs-common
+echo '192.168.100.210:/var/nfs/ /mnt/  nfs defaults 0 0' >> /etc/fstab
+mount 192.168.100.210:/var/nfs/ /mnt/
